@@ -37,6 +37,14 @@
         height: 32rem;
     }
 
+    .hero_image{
+        background-image: url("Images/hero_image.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 60%;
+        background-size: contain;
+    }
+
     .section1{
         height: 32rem;
     }
@@ -70,7 +78,7 @@
 <body>
     <div class="container">
         <!-------------------Header section-------------------------->
-        <div class="container-fluid header border ">
+        <div class="container-fluid header pt-3 pb-3">
             <div class="d-flex mt-3 justify-content-between">
                 <h1 class="h1"><a class="purple-text fw-bold brand">Taskia</a></h1>
                 <button type="button" class="btn btn-outline-primary btn-round mt-2 mb-2 round-corner">Try Free</button>
@@ -78,7 +86,7 @@
         </div>
 
         <!-------------------Hero section-------------------------->
-        <div class=" row hero border">
+        <div class=" row hero mb-4">
             <div class="col-6" style="width: 40%;">
                 <div class="p-4">
                     <h1>Task management and lists Tool</h1>
@@ -86,7 +94,7 @@
                         partnership with our clients is the only way to have a real
                         impact on their business.</p>
                         <div class="d-inline-flex justify-content-between" style="height: 50px; width: 100%;">
-                            <input type="email" class="form-control round-corner me-3">
+                            <input type="email" class="form-control round-corner me-3" placeholder="Name@company.com">
                             <button class="btn purple-bg text-light round-corner" style="width: 200px;">Try Free</button>
                         </div>
                 </div>
@@ -94,14 +102,19 @@
 
                 </div>
             </div>
-            <div  class="bg-dark col-6" style="width: 60%; background-image: url(Images/hero_image.jpg);">
+            <div  class="col-6 bg-image hero_image">
 
             </div>
         </div>
 
         <!-------------------Section1 - Featured Service-------------------------->
         <div class="container-fluid section1 border">
-            
+            <div>
+                <h1 class="text-center">Featured Service that We Provide</h1>
+            </div>
+            <div>
+
+            </div>
         </div>
 
         <!-------------------Section1 - task management-------------------------->
