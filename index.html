@@ -19,7 +19,8 @@
 <style>
     
     body{
-
+        padding: 0;
+        margin: 0;
     }
 
     .header{
@@ -27,6 +28,10 @@
     }
     .brand{
         text-decoration: none;
+    }
+
+    .round-corner{
+        border-radius: 30px;
     }
     .hero{
         height: 32rem;
@@ -56,44 +61,66 @@
     .purple-text{
         color: rgb(91, 31, 109);
     }
+    .purple-bg{
+        background-color: rgb(91, 31, 109);
+    }
+
 </style>
 </head>
 <body>
     <div class="container">
         <!-------------------Header section-------------------------->
-        <div class="container-fluid header bg-dark">
-            <div>
+        <div class="container-fluid header border ">
+            <div class="d-flex mt-3 justify-content-between">
                 <h1 class="h1"><a class="purple-text fw-bold brand">Taskia</a></h1>
+                <button type="button" class="btn btn-outline-primary btn-round mt-2 mb-2 round-corner">Try Free</button>
             </div>
         </div>
 
         <!-------------------Hero section-------------------------->
-        <div class="container-fluid bg-primary hero">
+        <div class=" row hero border">
+            <div class="col-6" style="width: 40%;">
+                <div class="p-4">
+                    <h1>Task management and lists Tool</h1>
+                    <p>We believe that designing products and services in close
+                        partnership with our clients is the only way to have a real
+                        impact on their business.</p>
+                        <div class="d-inline-flex justify-content-between" style="height: 50px; width: 100%;">
+                            <input type="email" class="form-control round-corner me-3">
+                            <button class="btn purple-bg text-light round-corner" style="width: 200px;">Try Free</button>
+                        </div>
+                </div>
+                <div>
 
+                </div>
+            </div>
+            <div  class="bg-dark col-6" style="width: 60%; background-image: url(Images/hero_image.jpg);">
+
+            </div>
         </div>
 
         <!-------------------Section1 - Featured Service-------------------------->
-        <div class="container-fluid bg-secondary section1">
+        <div class="container-fluid section1 border">
             
         </div>
 
         <!-------------------Section1 - task management-------------------------->
-        <div class="container-fluid bg-primary section2">
+        <div class="container-fluid section2 border">
 
         </div>
 
         <!-------------------Team Workflow section-------------------------->
-        <div class="container-fluid bg-secondary section3">
+        <div class="container-fluid section3 border">
 
         </div>
 
         <!-------------------try our service section-------------------------->
-        <div class="container-fluid bg-primary section4">
+        <div class="container-fluid section4 border">
 
         </div>
 
         <!-------------------Footer section-------------------------->
-        <div class="container-fluid bg-success footer">
+        <div class="container-fluid footer border">
 
         </div>
     </div>
