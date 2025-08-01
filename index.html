@@ -24,7 +24,7 @@
     }
 
     .header{
-        height: 100px;
+        min-height: 100px;
     }
     .brand{
         text-decoration: none;
@@ -34,105 +34,152 @@
         border-radius: 30px;
     }
     .hero{
-        height: 32rem;
+        min-height: 32rem;
+        max-height: 100%;
     }
 
     .hero_image{
         background-image: url("Images/hero_image.jpg");
         background-repeat: no-repeat;
         background-position: center;
-        width: 60%;
-        background-size: contain;
+        min-width: 60%;
+        background-size:contain;
     }
-
+    /*------------------------------------------------------------------*/
     .section1{
-        height: 32rem;
+        min-height: 32rem;
     }
-
+    .cards{
+        height: 400px;
+        border-radius: 10px;
+        transition: margin-right 2s ease-in-out; /* Smooth transition for all properties */
+    }
+    .card-img{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+        width: 100%;
+        min-height: 40%;
+    }
+    .cards:hover{
+        zoom:110%
+        
+    }
+    
+    /*------------------------------------------------------------------*/
     .section2{
-        height: 32rem;
+        min-height: 32rem;
     }
 
     .section3{
-        height: 32rem;
+        min-height: 32rem;
     }
 
     .section4{
-        height: 32rem;
+        min-height: 32rem;
     }
 
     .footer
     {
-        height: 32rem;
+        min-height: 32rem;
     }
 
     .purple-text{
-        color: rgb(91, 31, 109);
+        color: rgb(98, 100, 233);
     }
     .purple-bg{
-        background-color: rgb(91, 31, 109);
+        background-color: rgb(98, 100, 233);
     }
 
 </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container-sm">
         <!-------------------Header section-------------------------->
         <div class="container-fluid header pt-3 pb-3">
-            <div class="d-flex mt-3 justify-content-between">
+            <div class="d-lg-flex mt-3 justify-content-between">
                 <h1 class="h1"><a class="purple-text fw-bold brand">Taskia</a></h1>
                 <button type="button" class="btn btn-outline-primary btn-round mt-2 mb-2 round-corner">Try Free</button>
             </div>
         </div>
 
         <!-------------------Hero section-------------------------->
-        <div class=" row hero mb-4">
-            <div class="col-6" style="width: 40%;">
-                <div class="p-4">
+        <div class="d-lg-flex d-md-flex hero mb-4 justify-content-center">
+            <div class="col-lg-6" style="max-width: 100%; min-height: 20rem;">
+                <div class="p-4 text-center text-sm-center text-md-center text-lg-start">
                     <h1>Task management and lists Tool</h1>
                     <p>We believe that designing products and services in close
                         partnership with our clients is the only way to have a real
                         impact on their business.</p>
-                        <div class="d-inline-flex justify-content-between" style="height: 50px; width: 100%;">
-                            <input type="email" class="form-control round-corner me-3" placeholder="Name@company.com">
-                            <button class="btn purple-bg text-light round-corner" style="width: 200px;">Try Free</button>
+                        <div class="d-lg-flex justify-content-between" style="height: 50px; max-width: 100%;">
+                            <input type="email" class="form-control round-corner me-3 mt-2" placeholder="Name@company.com">
+                            <button class="btn purple-bg text-light round-corner mt-2" style="min-width: 180px;">Try Free</button>
                         </div>
                 </div>
                 <div>
 
                 </div>
             </div>
-            <div  class="col-6 bg-image hero_image">
+            <div  class="col-md-2 bg-image hero_image" style="max-width: 100%; min-height: 20rem;">
 
             </div>
         </div>
 
         <!-------------------Section1 - Featured Service-------------------------->
-        <div class="container-fluid section1 border">
-            <div>
+        <div class="container-fluid section1 mb-5">
+            <div class="mt-5 mb-3">
                 <h1 class="text-center">Featured Service that We Provide</h1>
             </div>
-            <div>
+            <div class="d-sm-flex d-md-flex d-lg-flex justify-content-center ps-5 pe-5">
+                <div class="col-sm-6 col-md-4 col-lg-3 m-4 purple-bg cards p-4 float-start">
+                    <div class="card-img" style="background-image: url(Images/Image3.png);">
 
+                    </div>
+                    <div class="text-center text-light">
+                        <h2>Keep tasks in one place</h2>
+                        <p class="mb-3">Save time, avoid losing work and information, delegate, 
+                            and track tasks to stay on schedule</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 m-4 bg-info-subtle cards p-4">
+                    <div class="card-img" style="background-image: url(Images/Image2.png);">
+
+                    </div>
+                    <div class="text-center">
+                        <h2>Keep tasks in one place</h2>
+                        <p class="mb-3">Save time, avoid losing work and information, delegate, 
+                            and track tasks to stay on schedule</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 m-4 bg-warning-subtle cards p-4">
+                    <div class="card-img" style="background-image: url(Images/Image1.png);">
+
+                    </div>
+                    <div class="text-center">
+                        <h2>Keep tasks in one place</h2>
+                        <p class="mb-3">Save time, avoid losing work and information, delegate, 
+                            and track tasks to stay on schedule</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-------------------Section1 - task management-------------------------->
-        <div class="container-fluid section2 border">
+        <!-------------------Section2 - task management-------------------------->
+        <div class="container-fluid section2 border mt-3">
 
         </div>
 
-        <!-------------------Team Workflow section-------------------------->
+        <!-------------------Section3 - Team Workflow-------------------------->
         <div class="container-fluid section3 border">
 
         </div>
 
-        <!-------------------try our service section-------------------------->
+        <!-------------------Section3 - try our service-------------------------->
         <div class="container-fluid section4 border">
 
         </div>
 
-        <!-------------------Footer section-------------------------->
+        <!-------------------Section4 - Footer-------------------------->
         <div class="container-fluid footer border">
 
         </div>
